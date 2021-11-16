@@ -1,0 +1,223 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Personal Portfolio
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        script(src='https://use.fontawesome.com/releases/v5.15.4/js/all.js', crossorigin='anonymous')
+
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand(href='#page-top')
+                    //- img(src='assets/img/navbar-logo.svg', alt='...')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    | Menu
+                    i.fas.fa-bars.ms-1
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
+                        li.nav-item
+                            a.nav-link(href='#home') Home
+                        li.nav-item
+                            a.nav-link(href='#skills') Skills
+                        li.nav-item
+                            a.nav-link(href='#portfolio') Projects
+                        li.nav-item
+                            a.nav-link(href='#about') Experience
+                        li.nav-item
+                            a.nav-link(href='#contact') Contact
+        // Masthead
+        header#home.masthead
+            .container
+                .masthead-heading.text-uppercase Santhosh B
+                .masthead-subheading Software Engineer
+                a.btn.btn-primary.btn-xl.text-uppercase(href='#contact') Hire Me 
+
+        // skills
+        section#skills.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Skills 
+                    h3.section-subheading.text-muted 
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
+                        h4.my-3 Front End
+                        p.text-muted
+                            | Familiar with Angular 9 (and previous versions) , Vue3 frameworks and able to work with HTML5, CSS, SCSS, Bootstrap to create a user friendly and dynamic web applications.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-cogs.fa-stack-1x.fa-inverse
+                        h4.my-3 Backend
+                        p.text-muted
+                            | Since I started my carrier with Nodejs familiar with secure and robust API's and able to manage business logics in backend to ensure security.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-lock.fa-stack-1x.fa-inverse
+                        h4.my-3 Database
+                        p.text-muted
+                            | Worked with RDBMS like mysql and Postgres , Nosql DB like MongoDB and Redis,  time series database like InfluxDB and able to create data models.
+
+        // Portfolio Grid
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Featured Projects
+                    h3.section-subheading.text-muted 
+                .row
+                    .col-lg-6.col-sm-6.mb-6
+                        // Portfolio item 1
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading Cloud Computing
+                                .portfolio-caption-subheading.text-muted Multicloud Management System
+                    .col-lg-6.col-sm-6.mb-6
+                        // Portfolio item 2
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
+                            .portfolio-caption
+                                .portfolio-caption-heading ERP
+                                .portfolio-caption-subheading.text-muted MSME Application
+                    .col-lg-4.col-sm-6.mb-4
+                        // Portfolio item 3
+                        //- .portfolio-item
+                        //-     a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
+                        //-         .portfolio-hover
+                        //-             .portfolio-hover-content
+                        //-                 i.fas.fa-plus.fa-3x
+                        //-         img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
+                        //-     .portfolio-caption
+                        //-         .portfolio-caption-heading Maps
+                        //-         .portfolio-caption-subheading.text-muted Openlayers
+
+        // About
+        section#about.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Experience
+                    h3.section-subheading.text-muted
+                ul.timeline
+                    li.timeline-inverted
+                        .timeline-image
+                            img.img-fluid.custom-img(src='assets/img/about/2.png', alt='...')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 2019-2020
+                                h4.subheading Junior Software Engineer
+                            .timeline-body
+                                p.text-muted
+                                    | Started my carrier as junior software developer in Aaludra technologies.
+                    li
+                        .timeline-image
+                            img.img-fluid.custom-img(src='assets/img/about/3.png', alt='...')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 2020-2021
+                                h4.subheading Software Engineer
+                            .timeline-body
+                                p.text-muted
+                                    | Promoted as software engineer at Aaludra technologies
+                    li.timeline-inverted
+                        .timeline-image
+                            img.img-fluid.custom-img(src='assets/img/about/4.png', alt='...')
+                        .timeline-panel
+                            .timeline-heading
+                                h4 2021- Present
+                                h4.subheading Senior Software Engineer
+                            .timeline-body
+                                p.text-muted
+                                    | Promoted as senior software engineer at Aaludra technologies
+                    li.timeline-inverted
+                        .timeline-image
+                            h4.exp-end-color
+                                | Ready to
+                                br
+                                | start a new
+                                br
+                                | Journey!
+
+        // Contact
+        section#contact.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Contact Details
+                    h3.section-subheading.text-muted 
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-mobile-alt.fa-stack-1x.fa-inverse
+                        h4.my-3.custom-color Ping Me
+                        p.text-muted.custom-color
+                            | +91 73733 48597
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-mail-bulk.fa-stack-1x.fa-inverse
+                        h4.my-3.custom-color Mail Me
+                        p.text-muted.custom-color
+                            | santhoshprakashb@gmail.com
+                    .col-md-4
+                        a(href='https://goo.gl/maps/dbuLyofsrhEJZqei8',target="_blank")
+                            span.fa-stack.fa-4x
+                                i.fas.fa-circle.fa-stack-2x.text-primary
+                                i.fas.fa-house-user.fa-stack-1x.fa-inverse
+                            h4.my-3.custom-color Find Me
+                            p.text-muted.custom-color
+                                | The Nilgiris, Tamil nadu, India
+
+        // Footer
+        footer.footer.py-4
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-start
+                        | 2021 &copy; Copyright. All rights reserved
+                    .col-lg-4.my-3.my-lg-0
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/in/santhoshprakashb',target="_blank")
+                            i.fab.fa-linkedin-in
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.instagram.com/santhosh_subramani97/',target="_blank")
+                            i.fab.fa-instagram
+                        a.btn.btn-dark.btn-social.mx-2(href='https://www.facebook.com/profile.php?id=100004386439373',target="_blank")
+                            i.fab.fa-facebook-f
+                    .col-lg-4.text-lg-start
+                        .fw-bolder What feels like the end is often the beginning !
+
+        // Portfolio Modals
+        include includes/portfolio-modal-1
+        include includes/portfolio-modal-2
+        include includes/portfolio-modal-3
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+        
+        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
